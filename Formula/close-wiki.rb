@@ -11,7 +11,7 @@ class CloseWiki < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/unrealandychan/close-wiki/releases/download/v0.8.4-go/close-wiki_0.8.4-go_darwin_amd64.tar.gz"
-      sha256 "94b643d77d83d249641d12961f69217c5f19e49aad4e5e6e6122c53e01a974d7"
+      sha256 "a32671f8404b9e288e5de7b0e9672105c9e4166da6124342262f4c1864233e04"
 
       define_method(:install) do
         bin.install "close-wiki"
@@ -19,7 +19,7 @@ class CloseWiki < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/unrealandychan/close-wiki/releases/download/v0.8.4-go/close-wiki_0.8.4-go_darwin_arm64.tar.gz"
-      sha256 "647544e235cd820d5eb5550283dc422c610fcf594fed963bd7713f7790db35ed"
+      sha256 "9ec2c4622d68c0ee58af3f2f196081fbfeba0f75cfc3c2fb4cfad57bd949ccda"
 
       define_method(:install) do
         bin.install "close-wiki"
@@ -30,14 +30,14 @@ class CloseWiki < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/unrealandychan/close-wiki/releases/download/v0.8.4-go/close-wiki_0.8.4-go_linux_amd64.tar.gz"
-      sha256 "4a24c7f8cdab51e3a6bc81f3f823037f09a0178d558c26195e5e3370a12a37e5"
+      sha256 "2466d2070f8261c9ad7c85c0289cb16c9da9b86580ed7c898118a68c575d3752"
       define_method(:install) do
         bin.install "close-wiki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/unrealandychan/close-wiki/releases/download/v0.8.4-go/close-wiki_0.8.4-go_linux_arm64.tar.gz"
-      sha256 "d24bee6d92b5de45cadc21bab13aea2d00c9281aec77dee9d80c758747080a37"
+      sha256 "2321627483858622a6e28d8b3017e5dbb3fd4f8ef5e4aad7a94bd8b17564a905"
       define_method(:install) do
         bin.install "close-wiki"
       end
