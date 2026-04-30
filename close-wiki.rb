@@ -5,21 +5,21 @@
 class CloseWiki < Formula
   desc "Agentic repo-to-wiki — scan any codebase into a structured knowledge base"
   homepage "https://github.com/unrealandychan/close-wiki"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.0/close-wiki_darwin_amd64.tar.gz"
-      sha256 "b3c2761fd79ea957b82237df89d178c2a0e6ce5eee201b2372ef8082c8cc83eb"
+      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.1/close-wiki_darwin_amd64.tar.gz"
+      sha256 "2a623da9cde05ec2b1f9964ec174e44c318f1268d23bae4425719bd3c13255ab"
 
       define_method(:install) do
         bin.install "close-wiki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.0/close-wiki_darwin_arm64.tar.gz"
-      sha256 "48dfe2373a51d3974d72faebb768eeace9871b5aa4f301db63d976dd16153ed8"
+      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.1/close-wiki_darwin_arm64.tar.gz"
+      sha256 "0cda6628ccafccfd72f0d6ac2ded68b711c2e3c1f1b65f95e5b07e79518c9c0c"
 
       define_method(:install) do
         bin.install "close-wiki"
@@ -29,15 +29,15 @@ class CloseWiki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.0/close-wiki_linux_amd64.tar.gz"
-      sha256 "390118c9a6b54b2f0088cc29687a7be4d293c4362fa245353fcdda8d7724d581"
+      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.1/close-wiki_linux_amd64.tar.gz"
+      sha256 "f1019a9c08c40fc287e67ee4dba7ce82f8fdc05cc2d2f52ecf888c969248ce02"
       define_method(:install) do
         bin.install "close-wiki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.0/close-wiki_linux_arm64.tar.gz"
-      sha256 "471ea708f94991c20cd1c48067d0d6756c207ba19fad4c1b44f692e27f0684af"
+      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.1/close-wiki_linux_arm64.tar.gz"
+      sha256 "5dc23108a7ff62cfb5cc8f86cad5b9c9fe032337b784998c627e21c32beed931"
       define_method(:install) do
         bin.install "close-wiki"
       end
