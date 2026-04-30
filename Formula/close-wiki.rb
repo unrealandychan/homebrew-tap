@@ -4,28 +4,28 @@
 class CloseWiki < Formula
   desc "Agentic repo-to-wiki — scan any codebase into a structured knowledge base"
   homepage "https://github.com/unrealandychan/close-wiki"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.0/close-wiki_darwin_amd64.tar.gz"
-      sha256 "b3c2761fd79ea957b82237df89d178c2a0e6ce5eee201b2372ef8082c8cc83eb"
+      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.1/close-wiki_darwin_amd64.tar.gz"
+      sha256 "b9243f07801a7a6df79ebbed062c346a00f2f28705ac2a71d8518ad1eeef5763"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.0/close-wiki_darwin_arm64.tar.gz"
-      sha256 "48dfe2373a51d3974d72faebb768eeace9871b5aa4f301db63d976dd16153ed8"
+      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.1/close-wiki_darwin_arm64.tar.gz"
+      sha256 "b9c6194af5e8ee95d9fc8cbd88edba8507e413750024aac86fae2c7863881233"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.0/close-wiki_linux_amd64.tar.gz"
-      sha256 "390118c9a6b54b2f0088cc29687a7be4d293c4362fa245353fcdda8d7724d581"
+      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.1/close-wiki_linux_amd64.tar.gz"
+      sha256 "727037ce7acc57c741fdbba575dac342e76b498f952a0249b81368442d0ac87b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.0/close-wiki_linux_arm64.tar.gz"
-      sha256 "471ea708f94991c20cd1c48067d0d6756c207ba19fad4c1b44f692e27f0684af"
+      url "https://github.com/unrealandychan/close-wiki-releases/releases/download/v0.9.1/close-wiki_linux_arm64.tar.gz"
+      sha256 "03f57fef16d9dc2d719ca40a2078de9b804ed9e3b9dacae07c2b61e0a63da01c"
     end
   end
 
