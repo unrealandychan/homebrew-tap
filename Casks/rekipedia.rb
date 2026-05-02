@@ -32,8 +32,6 @@ cask "rekipedia" do
     skip "Auto-generated on release."
   end
 
-  binary "rekipedia"
-
-  # No zap stanza required
+  binary "reki"
 
 end
