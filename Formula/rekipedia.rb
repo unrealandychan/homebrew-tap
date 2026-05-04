@@ -5,7 +5,7 @@ class Rekipedia < Formula
   desc "Agentic repo-to-wiki — scan any codebase into a structured knowledge base"
   homepage "https://github.com/unrealandychan/rekipedia"
   version "0.9.15"
-  license "Proprietary"
+  license :cannot_represent
 
   on_macos do
     if Hardware::CPU.intel?
