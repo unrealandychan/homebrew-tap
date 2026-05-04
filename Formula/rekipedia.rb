@@ -4,28 +4,28 @@
 class Rekipedia < Formula
   desc "Agentic repo-to-wiki — scan any codebase into a structured knowledge base"
   homepage "https://github.com/unrealandychan/rekipedia"
-  version "0.9.15"
+  version "0.9.18"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.15/rekipedia_darwin_amd64.tar.gz"
-      sha256 "c00fa82e45a67028dbd4829ad150843b4ba2473c41ad6ee96c61b530abff35ec"
+      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.18/rekipedia_darwin_amd64.tar.gz"
+      sha256 "76fd4a528c97f043cdb69a98dc3fec733fe7e25983c12846d00c5226feab75bd"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.15/rekipedia_darwin_arm64.tar.gz"
-      sha256 "3be6342f210803872bd02a299f91c8132bf2508c40e97bdaf45156632ad67218"
+      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.18/rekipedia_darwin_arm64.tar.gz"
+      sha256 "3754e20fb0fc43e0e9ae3516e9e3447eca005d94ce5ba0c495a5092e2b050cde"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.15/rekipedia_linux_amd64.tar.gz"
-      sha256 "6ceae2ee60bdada6fa7f04e4f1c1e6ab7d05248744955b497ed88135b9de37a7"
+      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.18/rekipedia_linux_amd64.tar.gz"
+      sha256 "c35ee352535397cc2c12a06bd69c61ac23008aa2183d51d8517f5f89ffbcb414"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.15/rekipedia_linux_arm64.tar.gz"
-      sha256 "d63917e7cd9d6c6d687871c806996f00b17c433d8e27defd9dd5182451f8e9fe"
+      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.18/rekipedia_linux_arm64.tar.gz"
+      sha256 "e35efdfb9f23a6491152741c831c19eb92526bba15d6c96a8c60f63f2fd5b9db"
     end
   end
 
