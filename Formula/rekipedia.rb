@@ -4,28 +4,28 @@
 class Rekipedia < Formula
   desc "Agentic repo-to-wiki — scan any codebase into a structured knowledge base"
   homepage "https://github.com/unrealandychan/rekipedia"
-  version "0.9.12"
-  license "MIT"
+  version "0.9.15"
+  license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.12/rekipedia_darwin_amd64.tar.gz"
-      sha256 "56873930b30c317be981f4590f336e1658f1ef391f45217e0514eb6fc0a42c44"
+      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.15/rekipedia_darwin_amd64.tar.gz"
+      sha256 "c00fa82e45a67028dbd4829ad150843b4ba2473c41ad6ee96c61b530abff35ec"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.12/rekipedia_darwin_arm64.tar.gz"
-      sha256 "9acabe4d529326fb5fc59f10067b44cc6f1471ac1c939e858adfb67b663afe04"
+      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.15/rekipedia_darwin_arm64.tar.gz"
+      sha256 "3be6342f210803872bd02a299f91c8132bf2508c40e97bdaf45156632ad67218"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.12/rekipedia_linux_amd64.tar.gz"
-      sha256 "62f89dc7b1f881590b90b2d8b8549b5ab370bd6a587ff9f02da027ea6c29235b"
+      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.15/rekipedia_linux_amd64.tar.gz"
+      sha256 "6ceae2ee60bdada6fa7f04e4f1c1e6ab7d05248744955b497ed88135b9de37a7"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.12/rekipedia_linux_arm64.tar.gz"
-      sha256 "dbd5c2ff2c9c35909d167018db2205308cdb95269862a7d4c8779d97ec4931c2"
+      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.15/rekipedia_linux_arm64.tar.gz"
+      sha256 "d63917e7cd9d6c6d687871c806996f00b17c433d8e27defd9dd5182451f8e9fe"
     end
   end
 
