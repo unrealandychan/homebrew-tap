@@ -4,28 +4,28 @@
 class Rekipedia < Formula
   desc "Agentic repo-to-wiki — scan any codebase into a structured knowledge base"
   homepage "https://github.com/unrealandychan/rekipedia"
-  version "0.9.36"
+  version "0.9.37"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.36/rekipedia_darwin_amd64.tar.gz"
-      sha256 "e3ff5f6d8920c8449fda81e4c98a7c1fa5da27a495b2e0f6f2cbc50ce5ddfb88"
+      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.9.37/rekipedia_darwin_amd64.tar.gz"
+      sha256 "c8bbc6d982b55f1033e2eb1fa5f1e8f68cd8304da1edea406589f710c9d46bf1"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.36/rekipedia_darwin_arm64.tar.gz"
-      sha256 "bd0b60a3fb9f61e27da106fded56d724f5b89049247e3b6a8621b3778c7d3d2e"
+      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.9.37/rekipedia_darwin_arm64.tar.gz"
+      sha256 "ce671470df4df196f59142dc62c0103e3f1af278a825e1fb565aef338527ff50"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.36/rekipedia_linux_amd64.tar.gz"
-      sha256 "c6c974cd939ff767979eb39ce97592746e20d70415b2159636ef71324302c4fa"
+      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.9.37/rekipedia_linux_amd64.tar.gz"
+      sha256 "cb4ccc4ca74ac2986ec24e21950f7be1fa86f98559279debfddd71b10bf69694"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/rekipedia-releases/releases/download/v0.9.36/rekipedia_linux_arm64.tar.gz"
-      sha256 "eda7ce9538ae7035383973bdc3a255123bca5afe5f7354b1a97f91a6f6bbb15e"
+      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.9.37/rekipedia_linux_arm64.tar.gz"
+      sha256 "8f7a89825ed0ba0d849901a2e91f840ae294f73cd217505f89ef4a036697fd4e"
     end
   end
 
@@ -34,6 +34,6 @@ class Rekipedia < Formula
   end
 
   test do
-    system "#{bin}/reki", "--version"
+    system "\#<built-in function bin>/reki", "--version"
   end
 end
