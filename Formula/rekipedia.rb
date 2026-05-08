@@ -4,28 +4,28 @@
 class Rekipedia < Formula
   desc "Agentic repo-to-wiki — scan any codebase into a structured knowledge base"
   homepage "https://github.com/unrealandychan/rekipedia"
-  version "0.10.2"
+  version "0.11.0"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.10.2/rekipedia_darwin_amd64.tar.gz"
-      sha256 "a2bde1a785878988361fd6e754ec1b42d130105c701e0cb73c29c642f5bf36d3"
+      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.11.0/rekipedia_darwin_amd64.tar.gz"
+      sha256 "fbfcc873fdfc6aa48985ae84f563f63377bef03e7e271aed88b1656f6d30a632"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.10.2/rekipedia_darwin_arm64.tar.gz"
-      sha256 "44b83912fa075fda151d70976fed255cd9bf741cf84cf5818cd9987ae0fe7e6f"
+      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.11.0/rekipedia_darwin_arm64.tar.gz"
+      sha256 "41c71c62e1ca006c794a9148fcd5097b1fdd82c96c28e87504e449cd81d336f5"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.10.2/rekipedia_linux_amd64.tar.gz"
-      sha256 "6e0b46f4010db6da7da02c951324a6aaa0995071806d9e72dde2eb8039866fec"
+      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.11.0/rekipedia_linux_amd64.tar.gz"
+      sha256 "ae27ad02bfce1d5f856ddf4f6a72a8496cc8b731069bea5acdaa8ef0589357f4"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.10.2/rekipedia_linux_arm64.tar.gz"
-      sha256 "b808586197dd32e8e289db2f101601174272159c3e418f6a8e7781dc858835ab"
+      url "https://github.com/unrealandychan/rekipedia/releases/download/v0.11.0/rekipedia_linux_arm64.tar.gz"
+      sha256 "4a97c3515cfbc14d82e8b13339b2c496d5c252a0b0e53e775e3e927f1a154a00"
     end
   end
 
